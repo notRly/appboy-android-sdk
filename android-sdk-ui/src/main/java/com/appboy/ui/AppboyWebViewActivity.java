@@ -63,6 +63,7 @@ public class AppboyWebViewActivity extends FragmentActivity {
     webSettings.setLoadWithOverviewMode(true);
     webSettings.setDisplayZoomControls(false);
     webSettings.setDomStorageEnabled(true);
+    webSettings.setMediaPlaybackRequiresUserGesture(false);
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q && ViewUtils.isDeviceInNightMode(this.getApplicationContext())) {
       webSettings.setForceDark(WebSettings.FORCE_DARK_ON);
     }
