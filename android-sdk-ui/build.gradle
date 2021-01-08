@@ -1,5 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'android-maven'
 
 dependencies {
   api "com.appboy:android-sdk-base:${BRAZE_SDK_VERSION}"
