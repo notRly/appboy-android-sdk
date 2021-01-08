@@ -24,6 +24,8 @@ ext {
 }
 
 subprojects {
+  apply plugin: 'maven'
+  
   repositories {
     maven { url "http://appboy.github.io/appboy-android-sdk/sdk" }
     mavenLocal()
