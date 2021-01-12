@@ -93,6 +93,7 @@ public abstract class AppboyInAppMessageHtmlBaseView extends RelativeLayout impl
     webSettings.setDomStorageEnabled(true);
     // Needed since locally downloaded assets are under `file://` schemes
     webSettings.setAllowFileAccess(true);
+    webSettings.setMediaPlaybackRequiresUserGesture(false);
     // This enables hardware acceleration if the manifest also has it defined.
     // If not defined, then the layer type will fallback to software.
     mMessageWebView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
